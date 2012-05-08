@@ -1,0 +1,8 @@
+name: SlimePlugin
+main: org.masterpi.mc.slimeplugin.SlimePlugin
+version: 0.1
+
+commands:
+   slime:
+      description: Tell if you are in a slime chunk.
+      usage: /<command> 
