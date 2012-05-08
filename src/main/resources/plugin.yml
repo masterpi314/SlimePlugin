@@ -1,8 +1,10 @@
 name: SlimePlugin
 main: org.masterpi.mc.slimeplugin.SlimePlugin
-version: 0.1
+version: ${pom.version}
+description: Plugin to help users find slime chunks
+author: MasterPi
 
 commands:
    slime:
-      description: Tell if you are in a slime chunk.
-      usage: /<command> 
+      description: Tells you if you are in a slime chunk.
+      usage: /<command>
