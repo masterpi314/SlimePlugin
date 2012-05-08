@@ -22,6 +22,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.Location;
+import org.bukkit.ChatColor;
 
 import java.util.logging.Logger;
 
@@ -46,7 +47,7 @@ public class SlimePluginCommandExecutor implements CommandExecutor {
                         location.getWorld().getSeed(),
                         location.getX(),
                         location.getZ())) {
-                    sender.sendMessage("You are in a slime chunk");
+                    sender.sendMessage(ChatColor.GREEN+"You are in a slime chunk"+ChatColor.RESET);
                 } else {
                     sender.sendMessage("You are not in a slime chunk");
                 }
