@@ -8,3 +8,8 @@ commands:
    slime:
       description: Tells you if you are in a slime chunk.
       usage: /<command>
+   slimecompass:
+      description: |
+          Make your compass point at center of the nearest slime chunk.
+          Use the "off" argument to turn it off.
+      usage: /<command> [off]

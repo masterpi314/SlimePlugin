@@ -30,6 +30,8 @@ public class SlimePlugin extends JavaPlugin {
     //ClassListeners
     private final SlimePluginCommandExecutor commandExecutor
         = new SlimePluginCommandExecutor(this);
+    private final SlimePluginCompassCommandExecutor compassCommandExecutor
+        = new SlimePluginCompassCommandExecutor(this);
      //ClassListeners
 
     public Location playerLoc;
@@ -47,6 +49,7 @@ public class SlimePlugin extends JavaPlugin {
         PluginManager pm = this.getServer().getPluginManager();
 
     getCommand("slime").setExecutor(commandExecutor);
+    getCommand("slimecompass").setExecutor(compassCommandExecutor);
 
     }
 }
